@@ -21,6 +21,32 @@ print tc.default_magenta('probando...')
 print tc.default_cyan('probando...')
 print tc.default_white('probando...')
 
+print tc.default_grey_grey('probando...')
+print tc.default_grey_red('probando...')
+print tc.default_grey_green('probando...')
+print tc.default_grey_yellow('probando...')
+print tc.default_grey_blue('probando...')
+print tc.default_grey_magenta('probando...')
+print tc.default_grey_cyan('probando...')
+print tc.default_grey_while('probando...')
+
+print tc.default_red_grey('probando...')
+print tc.default_red_red('probando...')
+print tc.default_red_green('probando...')
+print tc.default_red_yellow('probando...')
+print tc.default_red_blue('probando...')
+print tc.default_red_magenta('probando...')
+print tc.default_red_cyan('probando...')
+print tc.default_red_while('probando...')
+
+print tc.default_green_grey('probando...')
+print tc.default_green_red('probando...')
+print tc.default_green_green('probando...')
+print tc.default_green_yellow('probando...')
+print tc.default_green_blue('probando...')
+print tc.default_green_magenta('probando...')
+print tc.default_green_cyan('probando...')
+print tc.default_green_while('probando...')
 
 # import sys
 

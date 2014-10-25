@@ -93,6 +93,7 @@ class TextColor():
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__)
 
 
+
 	def default_grey_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREY__)
 
@@ -112,34 +113,60 @@ class TextColor():
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
 	def default_grey_cyan(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)										
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
 	def default_grey_while(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 
-	def default_red(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__)
+	def default_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
 
-	def default_green(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__)
+	def default_red_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_RED__)
 
-	def default_yellow(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__)
+	def default_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
 
-	def default_blue(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__)
+	def default_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
 
-	def default_magenta(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__)
+	def default_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
 
-	def default_cyan(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__)
+	def default_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def default_white(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__)
+	def default_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def default_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 
+	def default_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def default_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def default_green_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def default_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def default_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def default_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def default_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def default_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 
 														
