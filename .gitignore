@@ -53,4 +53,5 @@ docs/_build/
 # PyBuilder
 target/
 
-developer/
+terminal_text_color/app.py
+
