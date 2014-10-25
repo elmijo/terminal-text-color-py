@@ -66,8 +66,6 @@ class TextColor():
 	def crossedout(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__)
 
-
-
 	def default_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__)
 
@@ -92,10 +90,124 @@ class TextColor():
 	def default_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__)
 
+	def bold_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__)
 
+	def bold_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__)
 
-	def default_grey_grey(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREY__)
+	def bold_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__)
+
+	def bold_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__)
+
+	def bold_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__)
+
+	def bold_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__)
+
+	def bold_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__)
+
+	def bold_white(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__)
+
+	def opaque_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__)
+
+	def opaque_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__)
+
+	def opaque_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__)
+
+	def opaque_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__)
+
+	def opaque_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__)
+
+	def opaque_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__)
+
+	def opaque_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__)
+
+	def opaque_white(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__)
+
+	def italic_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__)
+
+	def italic_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__)
+
+	def italic_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__)
+
+	def italic_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__)
+
+	def italic_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__)
+
+	def italic_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__)
+
+	def italic_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__)
+
+	def italic_white(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__)		
+
+	def underline_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__)
+
+	def underline_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__)
+
+	def underline_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__)
+
+	def underline_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__)
+
+	def underline_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__)
+
+	def underline_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__)
+
+	def underline_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__)
+
+	def underline_white(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__)
+	def crossedout_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__)
+
+	def crossedout_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__)
+
+	def crossedout_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__)
+
+	def crossedout_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__)
+
+	def crossedout_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__)
+
+	def crossedout_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__)
+
+	def crossedout_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__)
+
+	def crossedout_white(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__)
 
 	def default_grey_red(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
@@ -118,12 +230,8 @@ class TextColor():
 	def default_grey_while(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
-
 	def default_red_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
-
-	def default_red_red(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_RED__)
 
 	def default_red_green(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
@@ -143,15 +251,11 @@ class TextColor():
 	def default_red_while(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
-
 	def default_green_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
 
 	def default_green_red(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
-
-	def default_green_green(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREEN__)
 
 	def default_green_yellow(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
@@ -168,76 +272,947 @@ class TextColor():
 	def default_green_while(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
+	def default_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
 
-														
+	def default_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
 
-	def bold(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__)
+	def default_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
 
-	def opaque(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__)
+	def default_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
 
-	def italic(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__)
+	def default_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def underline(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__)
+	def default_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__)
+	def default_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
+	def default_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
 
+	def default_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
 
-	# def gris(self,text):
-	# 	return self.grey(text)
+	def default_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
 
-	# def grey(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_GREY__)
+	def default_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
 
-	# def rojo(self,text):
-	# 	return self.red(text)
+	def default_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	# def red(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_RED__)
+	def default_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	# def verde(self,text):
-	# 	return self.green(text)
+	def default_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+		
+	def default_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
 
-	# def green(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_GREEN__)
+	def default_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
 
-	# def amarillo(self,text):
-	# 	return self.yellow(text)
+	def default_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
 
-	# def yellow(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_YELLOW__)
+	def default_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
 
-	# def azul(self,text):
-	# 	return self.blue(text)
+	def default_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
 
-	# def blue(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_BLUE__)
+	def default_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	# def magenta(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_MAGENTA__)
+	def default_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
-	# def cian(self,text):
-	# 	return self.cyan(text)
+	def default_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
 
-	# def cyan(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_CYAN__)
+	def default_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
 
-	# def blanco(self,text):
-	# 	return self.white(text)
+	def default_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
 
-	# def white(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_WHITE__)
+	def default_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
 
-	# def negrita(self,text):
-	# 	return self.bold(text)
+	def default_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
 
-	# def bold(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_BOLD__)
+	def default_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	# def default(self,text):
-	# 	return self.__compiler__(text,self.__COLOR_DEFAULT__)
+	def default_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def default_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def default_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def default_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def default_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def default_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def default_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def default_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_grey_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_grey_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_grey_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_grey_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_grey_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_grey_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_grey_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def bold_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def bold_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def bold_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def bold_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def bold_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def bold_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def bold_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def bold_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_grey_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_grey_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_grey_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_grey_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_grey_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_grey_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_grey_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+				
+	def opaque_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def opaque_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def opaque_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def opaque_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def opaque_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def opaque_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def opaque_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def opaque_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def opaque_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_grey_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_grey_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_grey_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_grey_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_grey_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_grey_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_grey_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def italic_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def italic_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def italic_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def italic_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def italic_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def italic_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def italic_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def italic_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_grey_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_grey_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_grey_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_grey_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_grey_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_grey_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_grey_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def underline_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def underline_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def underline_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def underline_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def underline_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def underline_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def underline_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def underline_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_grey_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_grey_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_grey_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_grey_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_grey_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_grey_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_grey_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_red_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_red_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_red_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_red_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_red_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_red_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_red_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_green_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_green_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_green_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_green_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_green_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_green_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_green_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_yellow_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_yellow_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_yellow_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_yellow_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_yellow_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_yellow_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_yellow_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_blue_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_blue_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_blue_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_blue_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_blue_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_blue_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_blue_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_magenta_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_magenta_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_magenta_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_magenta_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_magenta_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_magenta_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
+
+	def crossedout_magenta_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_cyan_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_cyan_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_cyan_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_cyan_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_cyan_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_cyan_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_cyan_while(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
+
+	def crossedout_white_grey(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREY__)
+
+	def crossedout_white_red(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_RED__)
+
+	def crossedout_white_green(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_GREEN__)
+
+	def crossedout_white_yellow(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_YELLOW__)
+
+	def crossedout_white_blue(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_BLUE__)
+
+	def crossedout_white_magenta(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
+
+	def crossedout_white_cyan(self,text):
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
