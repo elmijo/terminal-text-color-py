@@ -1215,4 +1215,4 @@ class TextColor():
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
 	def crossedout_white_cyan(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)
+		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__,background=self.__BACKGROUND_COLOR_CYAN__)	
