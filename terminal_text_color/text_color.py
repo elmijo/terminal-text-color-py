@@ -49,6 +49,13 @@ class TextColor():
 		"""
 		return self.__COLOR_INIT__ % (style,color,background)+text+self.__COLOR_ENDC__
 
+	def __is_valid_color__(self,color):
+		return str(color).lower() in self.__COLOR_LIST__
+
+	def __is_valid_style__(self,style):
+		return str(style).lower() in self.__STYLE_LIST__
+		
+
 	def default(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__)
 
@@ -308,7 +315,7 @@ class TextColor():
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_DEFAULT__,background=self.__BACKGROUND_COLOR_CYAN__)
 
 	def italic_default_white(self,text):
-		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_DEFAULT__)	,background=self.__BACKGROUND_COLOR_WHITE__)		
+		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_DEFAULT__,background=self.__BACKGROUND_COLOR_WHITE__)		
 
 	def underline_default_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_DEFAULT__,background=self.__BACKGROUND_COLOR_GREY__)
@@ -380,7 +387,7 @@ class TextColor():
 	def default_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_grey_while(self,text):
+	def default_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_red_grey(self,text):
@@ -401,7 +408,7 @@ class TextColor():
 	def default_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_red_while(self,text):
+	def default_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_green_grey(self,text):
@@ -422,7 +429,7 @@ class TextColor():
 	def default_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_green_while(self,text):
+	def default_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_yellow_grey(self,text):
@@ -443,7 +450,7 @@ class TextColor():
 	def default_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_yellow_while(self,text):
+	def default_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_blue_grey(self,text):
@@ -464,7 +471,7 @@ class TextColor():
 	def default_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_blue_while(self,text):
+	def default_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 		
 	def default_magenta_grey(self,text):
@@ -485,7 +492,7 @@ class TextColor():
 	def default_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def default_magenta_while(self,text):
+	def default_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_cyan_grey(self,text):
@@ -506,7 +513,7 @@ class TextColor():
 	def default_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def default_cyan_while(self,text):
+	def default_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def default_white_grey(self,text):
@@ -548,7 +555,7 @@ class TextColor():
 	def bold_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_grey_while(self,text):
+	def bold_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_red_grey(self,text):
@@ -569,7 +576,7 @@ class TextColor():
 	def bold_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_red_while(self,text):
+	def bold_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_green_grey(self,text):
@@ -590,7 +597,7 @@ class TextColor():
 	def bold_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_green_while(self,text):
+	def bold_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_yellow_grey(self,text):
@@ -611,7 +618,7 @@ class TextColor():
 	def bold_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_yellow_while(self,text):
+	def bold_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_blue_grey(self,text):
@@ -632,7 +639,7 @@ class TextColor():
 	def bold_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_blue_while(self,text):
+	def bold_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_magenta_grey(self,text):
@@ -653,7 +660,7 @@ class TextColor():
 	def bold_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def bold_magenta_while(self,text):
+	def bold_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_cyan_grey(self,text):
@@ -674,7 +681,7 @@ class TextColor():
 	def bold_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def bold_cyan_while(self,text):
+	def bold_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_BOLD__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def bold_white_grey(self,text):
@@ -716,7 +723,7 @@ class TextColor():
 	def opaque_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_grey_while(self,text):
+	def opaque_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_red_grey(self,text):
@@ -737,7 +744,7 @@ class TextColor():
 	def opaque_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_red_while(self,text):
+	def opaque_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_green_grey(self,text):
@@ -758,7 +765,7 @@ class TextColor():
 	def opaque_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_green_while(self,text):
+	def opaque_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_yellow_grey(self,text):
@@ -779,7 +786,7 @@ class TextColor():
 	def opaque_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_yellow_while(self,text):
+	def opaque_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_blue_grey(self,text):
@@ -800,7 +807,7 @@ class TextColor():
 	def opaque_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_blue_while(self,text):
+	def opaque_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 				
 	def opaque_magenta_grey(self,text):
@@ -821,7 +828,7 @@ class TextColor():
 	def opaque_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def opaque_magenta_while(self,text):
+	def opaque_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_cyan_grey(self,text):
@@ -842,7 +849,7 @@ class TextColor():
 	def opaque_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def opaque_cyan_while(self,text):
+	def opaque_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_OPAQUE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def opaque_white_grey(self,text):
@@ -884,7 +891,7 @@ class TextColor():
 	def italic_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_grey_while(self,text):
+	def italic_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_red_grey(self,text):
@@ -905,7 +912,7 @@ class TextColor():
 	def italic_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_red_while(self,text):
+	def italic_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_green_grey(self,text):
@@ -926,7 +933,7 @@ class TextColor():
 	def italic_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_green_while(self,text):
+	def italic_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_yellow_grey(self,text):
@@ -947,7 +954,7 @@ class TextColor():
 	def italic_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_yellow_while(self,text):
+	def italic_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_blue_grey(self,text):
@@ -968,7 +975,7 @@ class TextColor():
 	def italic_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_blue_while(self,text):
+	def italic_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_magenta_grey(self,text):
@@ -989,7 +996,7 @@ class TextColor():
 	def italic_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def italic_magenta_while(self,text):
+	def italic_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_cyan_grey(self,text):
@@ -1010,7 +1017,7 @@ class TextColor():
 	def italic_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def italic_cyan_while(self,text):
+	def italic_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_ITALIC__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def italic_white_grey(self,text):
@@ -1052,7 +1059,7 @@ class TextColor():
 	def underline_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_grey_while(self,text):
+	def underline_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_red_grey(self,text):
@@ -1073,7 +1080,7 @@ class TextColor():
 	def underline_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_red_while(self,text):
+	def underline_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_green_grey(self,text):
@@ -1094,7 +1101,7 @@ class TextColor():
 	def underline_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_green_while(self,text):
+	def underline_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_yellow_grey(self,text):
@@ -1115,7 +1122,7 @@ class TextColor():
 	def underline_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_yellow_while(self,text):
+	def underline_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_blue_grey(self,text):
@@ -1136,7 +1143,7 @@ class TextColor():
 	def underline_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_blue_while(self,text):
+	def underline_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_magenta_grey(self,text):
@@ -1157,7 +1164,7 @@ class TextColor():
 	def underline_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def underline_magenta_while(self,text):
+	def underline_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_cyan_grey(self,text):
@@ -1178,7 +1185,7 @@ class TextColor():
 	def underline_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def underline_cyan_while(self,text):
+	def underline_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_UNDERLINE__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def underline_white_grey(self,text):
@@ -1220,7 +1227,7 @@ class TextColor():
 	def crossedout_grey_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_grey_while(self,text):
+	def crossedout_grey_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_red_grey(self,text):
@@ -1241,7 +1248,7 @@ class TextColor():
 	def crossedout_red_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_red_while(self,text):
+	def crossedout_red_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_RED__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_green_grey(self,text):
@@ -1262,7 +1269,7 @@ class TextColor():
 	def crossedout_green_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_green_while(self,text):
+	def crossedout_green_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_GREEN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_yellow_grey(self,text):
@@ -1283,7 +1290,7 @@ class TextColor():
 	def crossedout_yellow_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_yellow_while(self,text):
+	def crossedout_yellow_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_YELLOW__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_blue_grey(self,text):
@@ -1304,7 +1311,7 @@ class TextColor():
 	def crossedout_blue_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_blue_while(self,text):
+	def crossedout_blue_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_BLUE__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_magenta_grey(self,text):
@@ -1325,7 +1332,7 @@ class TextColor():
 	def crossedout_magenta_cyan(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_CYAN__)
 
-	def crossedout_magenta_while(self,text):
+	def crossedout_magenta_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_MAGENTA__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_cyan_grey(self,text):
@@ -1346,7 +1353,7 @@ class TextColor():
 	def crossedout_cyan_magenta(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_MAGENTA__)
 
-	def crossedout_cyan_while(self,text):
+	def crossedout_cyan_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_CYAN__,background=self.__BACKGROUND_COLOR_WHITE__)
 
 	def crossedout_white_grey(self,text):
