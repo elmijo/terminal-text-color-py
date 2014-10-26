@@ -9,14 +9,15 @@ from text_color import TextColor
 
 class AlertTextColor(TextColor):
 
-	__ALERT_BOX_MIN_LEN__ = 40
-	__CURRENT_TEXT_LEN__  = None
+	__ALERT_BOX_MIN_LEN__  = 40
+	__CURRENT_TEXT_LEN__   = None
 
 	__ALERT_BOX_SUCCESS__  = 'default_white_green'
 	__ALERT_BOX_ERROR__    = 'default_white_red'
 	__ALERT_BOX_WARNING__  = 'default_white_yellow'
 	__ALERT_BOX_INFO__     = 'default_white_blue'
 	__ALERT_BOX_INFO_ALT__ = 'default_white_cyan'
+	__ALERT_BOX_CUSTOM__   = 'default'
 
 	@property
 	def __estyle_box__(self):
@@ -44,13 +45,13 @@ class AlertTextColor(TextColor):
 		return " "+text+" "
 
 	def __alert_box__(self,text):
-		topbottom = " "+self.__func_box__(self.__alert_top_bottom__(text))
-		text      = " "+self.__func_box__(self.__alert_text_box__(text))
+		topbottom = self.__func_box__(self.__alert_top_bottom__(text))
+		text      = self.__func_box__(self.__alert_text_box__(text))
 		print ""
 		print topbottom
 		print text
 		print topbottom
-		print ""
+		print ""		
 
 	def success(self,text):
 		self.__alert_box__(text)
@@ -68,4 +69,21 @@ class AlertTextColor(TextColor):
 		self.__alert_box__(text)
 
 	def custom(self,text,color='default',background='default',style='default'):
-		pass
+		
+		color = color if self.__is_valid_color__(color) else 'default'
+		background = background if self.__is_valid_color__(background) else 'default'
+		style = style if self.__is_valid_style__(style) else 'default'
+
+		if color == background == style == 'default':
+
+			self.__ALERT_BOX_CUSTOM__ = 'default'
+
+		elif background == 'default':
+
+			self.__ALERT_BOX_CUSTOM__ = style+'_'+color
+
+		else:
+
+			self.__ALERT_BOX_CUSTOM__ = style+'_'+color+'_'+background
+
+		self.__alert_box__(text)
