@@ -40,7 +40,7 @@ class AlertTextColor(TextColor):
 		return getattr(self,self.__style_title_box__)
 
 	def __text_content_len__(self,text,title):
-		return len(title)+2 if title and len(title) > len(text) else len(text)+2 if title else len(text)
+		return len(title) if title and len(title) > len(text) else len(text)+2 if title else len(text)
 
 
 	def __alert_top_bottom__(self,text,title):
@@ -48,33 +48,29 @@ class AlertTextColor(TextColor):
 		if boxlen < self.__ALERT_BOX_MIN_LEN__:
 			boxlen = self.__ALERT_BOX_MIN_LEN__
 
-
-		return " "*int(boxlen+2)
+		return " "*int(boxlen+(2 if title else 0))
 
 	def __alert_text_box__(self,text,title):
-		textlen = (self.__ALERT_BOX_MIN_LEN__ - self.__CURRENT_TEXT_LEN__ )+ self.__CURRENT_TEXT_LEN__ - len(text)
 
-		if textlen  > 0:
-			text = " "*2 + text + " "*(textlen-2) if title else text +" "*textlen
+		if self.__CURRENT_TEXT_LEN__ > len(text) and self.__ALERT_BOX_MIN_LEN__ > self.__CURRENT_TEXT_LEN__:
+			textlen = self.__ALERT_BOX_MIN_LEN__ - len(text)
+
 		else:
-			text = " "*2 + text if title else text
+			textlen = self.__CURRENT_TEXT_LEN__ - len(text)
 
-		return " "+text+" "
+		text = " "*2 + text + " "*(textlen-2) if title else text +" "*textlen
+
+		return " "+text+" "		
 
 	def __alert_title_box__(self,title):
-		titlelen = (self.__ALERT_BOX_MIN_LEN__ - self.__CURRENT_TEXT_LEN__ )+ self.__CURRENT_TEXT_LEN__ - len(title)
-		# titlelen = self.__ALERT_BOX_MIN_LEN__ - self.__CURRENT_TEXT_LEN__
 
-		print self.__CURRENT_TEXT_LEN__ 
-		print len(title)
-		print self.__CURRENT_TEXT_LEN__ - len(title)
-		print (self.__ALERT_BOX_MIN_LEN__ - self.__CURRENT_TEXT_LEN__ )
-
-		if titlelen  > 0:
-			title = title +" "*titlelen
+		if self.__CURRENT_TEXT_LEN__ > len(title):
+			# lendiff = self.__CURRENT_TEXT_LEN__ - len(title)
+			title = title+ " "*(self.__CURRENT_TEXT_LEN__ - len(title))
+		else:
+			title = title+ " "*(self.__ALERT_BOX_MIN_LEN__ - len(title))
 
 		return " "+title+" "
-
 
 	def __alert_box__(self,text,title):
 		topbottom = self.__func_box__(self.__alert_top_bottom__(text,title))
