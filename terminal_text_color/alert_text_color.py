@@ -48,11 +48,14 @@ class AlertTextColor(TextColor):
 		if boxlen < self.__ALERT_BOX_MIN_LEN__:
 			boxlen = self.__ALERT_BOX_MIN_LEN__
 
-		return " "*int(boxlen+(2 if title else 0))
+		return " "*int(boxlen+2)
 
 	def __alert_text_box__(self,text,title):
 
 		if self.__CURRENT_TEXT_LEN__ > len(text) and self.__ALERT_BOX_MIN_LEN__ > self.__CURRENT_TEXT_LEN__:
+			textlen = self.__ALERT_BOX_MIN_LEN__ - len(text)
+
+		elif self.__CURRENT_TEXT_LEN__ < self.__ALERT_BOX_MIN_LEN__:
 			textlen = self.__ALERT_BOX_MIN_LEN__ - len(text)
 
 		else:
@@ -65,7 +68,6 @@ class AlertTextColor(TextColor):
 	def __alert_title_box__(self,title):
 
 		if self.__CURRENT_TEXT_LEN__ > len(title):
-			# lendiff = self.__CURRENT_TEXT_LEN__ - len(title)
 			title = title+ " "*(self.__CURRENT_TEXT_LEN__ - len(title))
 		else:
 			title = title+ " "*(self.__ALERT_BOX_MIN_LEN__ - len(title))
