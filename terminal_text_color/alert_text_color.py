@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 	termina_text_colot
 	~~~~~~~~~~~~~~~~~~~~~
 	Permite imprimir el texto en la consola en forma de alerta 
-"""
+'''
 from text_color import TextColor
 
 
 class AlertTextColor(TextColor):
-
+	'''
+		Permite imprimir un texto en consola en forma de alerta, paraa ello posee 6 metodos:
+		:success:
+		:error:
+		:warning:
+		:info:
+		:info_alt:
+		:custom:
+	'''
 	__ALERT_BOX_MIN_LEN__  = 40
 	__CURRENT_TEXT_LEN__   = None
 
@@ -29,7 +37,6 @@ class AlertTextColor(TextColor):
 	def __func_box__(self):
 		return getattr(self,self.__style_box__)
 
-
 	@property
 	def __style_title_box__(self):
 		from inspect import stack
@@ -41,7 +48,6 @@ class AlertTextColor(TextColor):
 
 	def __text_content_len__(self,text,title):
 		return len(title) if title and len(title) > len(text) else len(text)+2 if title else len(text)
-
 
 	def __alert_top_bottom__(self,text,title):
 		boxlen = self.__CURRENT_TEXT_LEN__ = self.__text_content_len__(text,title)
@@ -111,6 +117,10 @@ class AlertTextColor(TextColor):
 
 			self.__ALERT_BOX_CUSTOM__ = 'default'
 
+		elif color == background == 'default':
+			
+			self.__ALERT_BOX_CUSTOM__ = style
+
 		elif background == 'default':
 
 			self.__ALERT_BOX_CUSTOM__ = style+'_'+color
@@ -118,5 +128,6 @@ class AlertTextColor(TextColor):
 		else:
 
 			self.__ALERT_BOX_CUSTOM__ = style+'_'+color+'_'+background
+
 
 		self.__alert_box__(text,title)

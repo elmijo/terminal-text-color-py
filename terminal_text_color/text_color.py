@@ -50,11 +50,16 @@ class TextColor():
 		return self.__COLOR_INIT__ % (style,color,background)+text+self.__COLOR_ENDC__
 
 	def __is_valid_color__(self,color):
+		"""
+			Valida si el nombre del clor es soportaado por la clase
+		"""
 		return str(color).lower() in self.__COLOR_LIST__
 
 	def __is_valid_style__(self,style):
+		"""
+			Valida si el estilo es soportado por lla claase
+		"""
 		return str(style).lower() in self.__STYLE_LIST__
-		
 
 	def default(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__)
@@ -73,8 +78,6 @@ class TextColor():
 
 	def crossedout(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__)
-
-
 
 	def default_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__)
@@ -219,8 +222,6 @@ class TextColor():
 	def crossedout_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_WHITE__)
 
-
-
 	def default_default_grey(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_DEFAULT__,background=self.__BACKGROUND_COLOR_GREY__)
 
@@ -364,10 +365,6 @@ class TextColor():
 
 	def crossedout_default_white(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_CROSSEDOUT__,color=self.__TEXT_COLOR_DEFAULT__,background=self.__BACKGROUND_COLOR_WHITE__)
-
-
-
-
 
 	def default_grey_red(self,text):
 		return self.__compiler__(text,style=self.__TEXT_STYLE_DEFAULT__,color=self.__TEXT_COLOR_GREY__,background=self.__BACKGROUND_COLOR_RED__)

@@ -1,11 +1,15 @@
-from setuptools import setup, find_packages
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
 
 long_description = """
 Python Terminal Text Color es una herramienta que permite ponerle color a un texto
 que vallamos a imprimir por la consola.	
-""""
+"""
 
-version = __import__("terminal_text_color").VERSION
+version = __import__("terminal_text_color").__version__
 
 
 
@@ -18,15 +22,23 @@ classifiers = [
 	'Operating System :: OS Independent',
 	'Topic :: Software Development :: Libraries :: Python Modules',
 ]
-
+keywords = [
+	'teminal',
+	'console',
+	'color',
+	'style',
+	'background',
+	'alert',
+	'elmijo'
+]
 install_requires = []
 
 setup(
-	name='Python Terminal Text Color',
+	name='Terminal-Text-Color',
 	version=version,
 	url='https://github.com/ElMijo/terminal-text-color-py',
 	license='MIT',
-	author='Jerry Anselmi'
+	author='Jerry Anselmi',
 	author_email='jerry.anselmi@gmail.com',
 	description='Simple herramienta para darle color al texto en consola',
 	long_description=long_description,
@@ -34,5 +46,6 @@ setup(
 	package_dir={'terminal_text_color': 'terminal_text_color'},
 	include_package_data=True,
 	classifiers = classifiers,
-
+	keywords = keywords,
+	platforms='any',
 )
