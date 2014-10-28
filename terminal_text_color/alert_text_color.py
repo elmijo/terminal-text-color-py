@@ -84,13 +84,13 @@ class AlertTextColor(TextColor):
 		topbottom = self.__func_box__(self.__alert_top_bottom__(text,title))
 		text      = self.__func_box__(self.__alert_text_box__(text,title))
 		title     = self.__func_title_box__(self.__alert_title_box__(title)) if title else None
-		print ""
-		print topbottom
+		print("")
+		print(topbottom)
 		if title: 
-			print title
-		print text
-		print topbottom
-		print ""		
+			print(title)
+		print(text)
+		print(topbottom)
+		print("")
 
 	def success(self,text,title=None):
 		self.__alert_box__(text,title)
