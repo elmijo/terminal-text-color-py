@@ -54,4 +54,4 @@ docs/_build/
 target/
 
 terminal_text_color/app.py
-
+.pypirc

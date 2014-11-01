@@ -11,16 +11,22 @@ que vallamos a imprimir por la consola.
 
 version = __import__("terminal_text_color").__version__
 
-
-
 classifiers = [
-	'Programming Language :: Python',
-	'Programming Language :: Python :: 3',
-	'Natural Language :: Spanish',
+	'Development Status :: 5',
+	'Environment :: Console',
 	'Intended Audience :: Developers',
-	'License :: MIT License',
-	'Operating System :: OS Independent',
+	'License :: OSI Approved :: MIT License',
+	'Natural Language :: Spanish',
+	'Operating System :: Unix',	
+	'Programming Language :: Python :: 2.7',
+	'Programming Language :: Python :: 3.2',
+	'Programming Language :: Python :: 3.3',
+	'Programming Language :: Python :: 3.4',
+	'Intended Audience :: Developers',
 	'Topic :: Software Development :: Libraries :: Python Modules',
+	'Topic :: Software Development :: User Interfaces',
+	'Topic :: Terminals :: Terminal Emulators/X Terminals'
+	'Topic :: Utilities'
 ]
 keywords = [
 	'teminal',
