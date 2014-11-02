@@ -3,14 +3,26 @@ Python Terminal Text Color
 
 [![Build Status](https://travis-ci.org/ElMijo/terminal-text-color-py.svg?branch=master)](https://travis-ci.org/ElMijo/terminal-text-color-py) [![Coverage Status](https://coveralls.io/repos/ElMijo/terminal-text-color-py/badge.png?branch=master)](https://coveralls.io/r/ElMijo/terminal-text-color-py?branch=master) [![Documentation Status](https://readthedocs.org/projects/terminal-text-color-py/badge/?version=latest)](https://readthedocs.org/projects/terminal-text-color-py/?badge=latest)
 
-Este es una herramienta muy simple que permite darle color a nuestros textos al momento de trabajar en consola. La paleta de colores utilizados en esta versión son de SGR (Select  Graphic Rendition), los mismos estan basados en colores que pueden ser renderizados en forma normal o en alta intensidad. Para esta versión no damos sopote ha  los colores de altaa intensidad ya que los mismos solo son vistos en aixterm.
+Este es una herramienta muy simple que permite darle color a nuestros textos al momento de trabajar en consola. La paleta de colores utilizados en esta versión son de SGR 
+(Select  Graphic Rendition), los mismos estan basados en colores que pueden ser renderizados en forma normal o en alta intensidad. Para esta versión no damos sopote ha  los colores de alta intensidad ya que los mismos solo son vistos en aixterm.
 
+## Dependencias
+
+Esta versión de Terminal-Text-Color fue probada en las versiones de Python 2.7, 3.2, 3.3, 3.4 y no tiene dependencias
+
+## Instalación
+
+Terminal-Text-Color esta disponible [PyPi](https://pypi.python.org/pypi/Terminal-Text-Color). La mejor manera de instalar es a través de **pip**, de la siguiente manera
+
+```bash
+pip install Terminal-Text-Color
+```
 ## Estilos soportados (style)
 
  - Default : *Estilo por defecto de tu consola*
  - Bold : *Estilo negrita*
- - Opaque : *Estilo opaco, una pequeña variación del color de la fueente*
- - Italic : *Estilo cursivo, para que surta efecto la consoola debe tener __Italic : on__*
+ - Opaque : *Estilo opaco, una pequeña variación del color de la fuente*
+ - Italic : *Estilo cursivo, para que surta efecto la consola debe tener __Italic : on__*
  - Underline : *Estilo subrallado*
  - Crossedout : *Estilo tachado*
 
@@ -39,8 +51,7 @@ Este es una herramienta muy simple que permite darle color a nuestros textos al 
  ```python
  tc = TextColor()
  ```
-### Invocar los metodos de color deseada
-
+### Invocar los metodos de color y estilo
 Hay tres formas de invocar los metodos
 
 #### Metodos solo estilo
@@ -68,8 +79,8 @@ tc.{{style}}_{{color}}(text)
 ```
 
 Ejemplos:
-Estos metodos colocan el fondo por defecto (*default*), aqui puedes hacer diferentes convinaciones
-entre estilos y colores segun se deseen
+Estos metodos colocan el fondo por defecto (*default*), aqui puedes hacer diferentes combinaciones
+entre estilos y colores
 
 ```python
 print tc.default_red("Mi texto con estilo y color")
