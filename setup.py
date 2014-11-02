@@ -12,7 +12,6 @@ que vallamos a imprimir por la consola.
 version = __import__("terminal_text_color").__version__
 
 classifiers = [
-	'Development Status :: 5',
 	'Environment :: Console',
 	'Intended Audience :: Developers',
 	'License :: OSI Approved :: MIT License',
@@ -25,7 +24,7 @@ classifiers = [
 	'Intended Audience :: Developers',
 	'Topic :: Software Development :: Libraries :: Python Modules',
 	'Topic :: Software Development :: User Interfaces',
-	'Topic :: Terminals :: Terminal Emulators/X Terminals'
+	'Topic :: Terminals :: Terminal Emulators/X Terminals',
 	'Topic :: Utilities'
 ]
 keywords = [
